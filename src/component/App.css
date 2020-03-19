@@ -1,0 +1,127 @@
+body, html {
+	height: 100%;
+	margin: 0px;
+}
+
+#root {
+	height: 100%;
+}
+
+.App {
+	height: 100%;
+	background-color: white;
+}
+
+.App-header {
+	color: white;
+	background-color:#312f2f;
+	
+}
+.App-nav {
+	padding: 10px 70px 0px 70px;
+}
+
+.App-nav a {
+	text-decoration: none;
+	color: #ffffff;
+	margin: 0 1em;
+}
+.color-white{
+	color: white;
+}
+.App-nav a:hover {
+	text-decoration: underline;
+}
+
+.App-nav a:first-child {
+	margin-left: 0;
+}
+
+.App-link {
+	color: #61dafb;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100vh - 500px);
+    overflow-y: scroll;
+}
+.bg-image {
+  background-image: url('../lib/assets/placeholder.png');
+	background-position:center;
+	background-repeat:no-repeat;
+  background-size:cover;
+  width: 200px;
+  height: 200px;
+  background-color:#312f2f;
+  text-align: center;
+  padding: 10px;
+}
+.bg-color-dark{
+  background-color:#312f2f;
+}
+.App-footer {
+	color:#ffffff;
+    border-top: 1px solid #e7eaec;
+    bottom: 0;
+    left: 0;
+	padding: 70px 100px 70px 100px;
+    position: absolute;
+	right: 0;
+}
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+.social-img{
+	width:40px;
+	height:	40px
+}
+.margin-right-10{
+	margin-right: 10px
+}
+.margin-top-10{
+	margin-top:10px
+}
+.margin-top-20{
+	margin-top:20px
+}
+.margin-top-30{
+	margin-top:30px
+}
+.margin-top-40{
+	margin-top:40px
+}
+.bg-color-blue{
+	background-color: #0074FF
+}
+.header-top{
+	display: flex;
+	background-color:#0074FF;
+	padding:10px 70px 10px 70px;
+}
+.header-bottom{
+	background-color:#312f2f;
+	padding: 3px 70px 5px 70px;
+}
+.dispaly-flex{
+	display: flex;
+}
+.position-relative{
+	position: relative;
+	width:100%
+}
+.text-left{
+	text-align:left;
+}
+.text-left a{
+	text-decoration:none;
+	color:'white'
+}
+.text-right{
+	text-align:right;	
+    margin-top: -40px;
+
+}
