@@ -26,6 +26,5 @@ class HOME extends Component{
     }
 }
 
-
 export default HOME
   

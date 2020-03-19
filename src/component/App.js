@@ -90,6 +90,11 @@ class App extends Component{
   }
 }
 
+const mapStateToProps = ( state ) => ({
+  entries: state.entries.entries,
+  status: state.entries.status
+})
+
 const mapDispatchToProps = ( dispatch ) => bindActionCreators(actions, dispatch)
 
-export default connect(null, mapDispatchToProps)(App)
+export default connect(mapStateToProps, mapDispatchToProps)(App)
