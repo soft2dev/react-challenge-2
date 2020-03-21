@@ -17,8 +17,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
 import * as actions from '../reducers/Entries'
 
-import Series from './Series';
-import Movies from './Movies';
 import Home from './Home'
 
 class App extends Component{
@@ -77,11 +75,12 @@ class App extends Component{
           <Route exact path='/'>
             <Home />
           </Route>
+          <Route exact path='/:entryId' component={Home} />
           <Route exact path='/series'>
-            <Series />
+            <Home />
           </Route>
-          <Route exact path='/movies'>
-            <Movies />
+          <Route exact path='/movie'>
+            <Home />
           </Route>
         </Switch>
       </div>
@@ -90,11 +89,6 @@ class App extends Component{
   }
 }
 
-const mapStateToProps = ( state ) => ({
-  entries: state.entries.entries,
-  status: state.entries.status
-})
-
 const mapDispatchToProps = ( dispatch ) => bindActionCreators(actions, dispatch)
 
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default connect(null, mapDispatchToProps)(App)
